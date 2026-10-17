@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>TROPERO · Envueltitos y algo más · Mendoza</title>
+    <meta name="description" content="Envueltitos, pizzas, hamburguesas y lomos en Mendoza. Armá tu pedido online y mandalo directo por WhatsApp." />
+    <meta name="theme-color" content="#14110F" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="TROPERO" />
+    <meta property="og:title" content="TROPERO · Envueltitos y algo más" />
+    <meta property="og:description" content="Pedí envueltitos, pizzas, hamburguesas y lomos. Armá tu pedido y mandalo por WhatsApp." />
+    <!-- TODO: cuando haya dominio, usar URL absoluta (ej: https://tropero.vercel.app/img/og-tropero.jpg) -->
+    <meta property="og:image" content="/img/og-tropero.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fuentes sin bloquear el primer render (display=swap + carga diferida del CSS) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="/img/envueltito-carne-480.webp"
+      imagesrcset="/img/envueltito-carne-480.webp 480w, /img/envueltito-carne-960.webp 849w"
+      imagesizes="(min-width: 900px) 520px, 74vw"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
+    <div id="root"><!--app--></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
